@@ -23,6 +23,7 @@ export default class MyApp extends App {
         <Head>
           <link rel="stylesheet" type="text/css" href="/nprogress.css" />
           <link rel="stylesheet" type="text/css" href="/bootstrap.css" />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         </Head>
         <Container>
             <Row>
