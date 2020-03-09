@@ -8,6 +8,9 @@ import { Container, Row } from 'react-bootstrap'
 
 import NavBar from '../components/NavBar'
 
+import 'bootstrap/dist/css/bootstrap.css'
+import 'nprogress/nprogress.css'
+
 Router.events.on('routeChangeStart', url => {
   NProgress.start()
 })
