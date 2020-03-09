@@ -1,4 +1,4 @@
-import Link from '../mwd/Link'
+import Link from './Link'
 
 export default () => {
     return (    
