@@ -22,12 +22,6 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
     return (
-      <>
-        <Head>
-          <link rel="stylesheet" type="text/css" href="/nprogress.css" />
-          <link rel="stylesheet" type="text/css" href="/bootstrap.css" />
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        </Head>
         <Container>
             <Row>
                 <NavBar />
@@ -36,7 +30,6 @@ export default class MyApp extends App {
                 <Component {...pageProps} />
             </Row>
         </Container>
-      </>
     )
   }
 }
