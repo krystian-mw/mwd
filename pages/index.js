@@ -1,6 +1,6 @@
 import Head from 'next/head'
-
-import Body from '../layouts/default'
+import Body from '../layouts/bootstrap'
+import { Col } from 'react-bootstrap'
 
 const Home = () => {
     return (
@@ -10,7 +10,9 @@ const Home = () => {
                 <meta name="description" content="My new fantastic webpage which is still under construction. Check it out soon!" />
             </Head>
             <Body>
-                <h1>MWD</h1>
+                <Col sm="12">
+                    <img src="/cover.jpg" alt="front cover page" width="100%" />
+                </Col>
             </Body>
         </>
     )

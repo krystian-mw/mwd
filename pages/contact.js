@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Body from '../layouts/default'
+import Body from '../layouts/bootstrap'
 
 const Contact = () => {
     return (

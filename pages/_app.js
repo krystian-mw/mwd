@@ -1,14 +1,9 @@
 import App from 'next/app'
-import Link from 'next/link'
 import Router from 'next/router'
 import Head from 'next/head'
 
 import NProgress from 'nprogress'
-import { Container, Row } from 'react-bootstrap'
 
-import NavBar from '../components/NavBar'
-
-import 'bootstrap/dist/css/bootstrap.css'
 import 'nprogress/nprogress.css'
 
 Router.events.on('routeChangeStart', url => {
@@ -22,7 +17,22 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
     return (
-        <Component {...pageProps} />
+        <>
+            <Head>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160281793-1"></script>
+                <script dangerouslySetInnerHTML={{
+                    __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'UA-160281793-1');
+                        `
+                }}>
+                </script>
+            </Head>
+            <Component {...pageProps} />
+        </>
     )
   }
 }
