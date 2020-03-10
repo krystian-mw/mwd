@@ -22,14 +22,7 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
     return (
-        <Container>
-            <Row>
-                <NavBar />
-            </Row>
-            <Row>
-                <Component {...pageProps} />
-            </Row>
-        </Container>
+        <Component {...pageProps} />
     )
   }
 }
