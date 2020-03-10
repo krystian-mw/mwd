@@ -1,0 +1,10 @@
+{
+  "name": "Krystian WTF",
+  "short_name": "Krystian WTF",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
+}
