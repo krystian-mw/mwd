@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Body from '../../layouts/bootstrap'
+import Body from '../../layouts/default'
 
 import { Spinner } from 'react-bootstrap'
 
@@ -15,6 +15,7 @@ export default class Projects extends React.Component {
         return (
             <>
                 <Body>
+                    <p>Hello</p>
                     <Spinner animation="border" />
                 </Body>
             </>

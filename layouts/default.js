@@ -6,7 +6,7 @@ export default ({ children }) => (
         flexDirection: 'column',
         margin: 'auto'
     }}>
-        <div><NavBar /></div>
-        <div>{children}</div>
+        <div id="NavBar"><NavBar /></div>
+        <div id="Body">{children}</div>
     </div>
 )
